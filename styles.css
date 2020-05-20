@@ -1,0 +1,73 @@
+body{
+  background-color: #17223b;
+  color:#f6d365;
+}
+
+.header{
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.dark_mode{
+  margin-right: 5px;
+}
+
+h1{
+  font-size: 7rem;
+
+}
+
+.first{
+  width: 50rem;
+  text-align: center;
+  margin: auto;
+}
+
+.players{
+  margin: 3rem 0;
+}
+
+.player-names{
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.dice{
+  margin: 30px 0;
+  width: 15rem;
+  height: auto;
+}
+
+.button-row{
+  text-align: center;
+  margin: auto;
+}
+
+.btn-text{
+  font-size: 3rem;
+}
+
+.btn-text:hover{
+  color: black;
+}
+
+.modes{
+  width: 300px;
+  text-align: center;
+}
+
+.light-mode{
+  background-color: #f6d365;
+  color: #17223b;
+}
+
+.dark-mode{
+  color: #f6d365;
+  background-color: #17223b;
+}
+
+.footer{
+  text-align: center;
+  color: white;
+}

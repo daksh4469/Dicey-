@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Viaoda+Libre&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+  <title>Dicey!</title>
+</head>
+
+<body id="bodyid">
+
+<nav class="navbar navbar-expand-md navbar-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+    <button class="btn btn-outline-light dark_mode" onclick="dark_mode();">Dark Mode</button>
+    </li>
+    <li class="nav-item">
+        <button class="btn btn-outline-danger" onclick="light_mode();">Light Mode</button>
+    </li>
+  </ul>
+</nav>
+
+  <div class="header">
+    <h1 id="heading">Dicey!</h1>
+  </div>
+
+  <section class="first">
+    <div class="players">
+      <div class="row">
+        <div class="col-lg-6 player-names">
+          <h2>Player 1</h2>
+          <img id="img1" class="dice" src="images/dice6.png" />
+          <div class="button-row">
+            <button type="button" class="btn btn-outline-warning btn-lg " onclick="random_image1();"><i class="fab fa-apple"></i>
+              <h1 class="btn-text">Roll</h1>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6 player-names">
+          <h2>Player 2</h2>
+          <img id="img2" class="dice" src="images/dice6.png" />
+          <div class="button-row">
+            <button type="button" class="btn btn-outline-warning btn-lg " onclick="random_image2();"><i class="fab fa-apple"></i>
+              <h1 class="btn-text">Roll</h1>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <h3><a href="https://daksh4469.github.io/">www.daksh4469.github.io</a></h3>
+  </div>
+
+  <link rel="stylesheet" href="index.js">
+<script>
+  function light_mode(){
+    var element = document.body;
+    element.classList.toggle("light-mode");
+  }
+  function dark_mode(){
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
+</script>
+</body>
+
+</html>
